@@ -58,8 +58,7 @@ export default {
         }
       });
 
-      const mobileView = api.container.lookup("site:main").mobileView;
-      const loc = mobileView ? "before" : "after";
+      const loc = "after";
       api.decorateWidget(`poster-name:${loc}`, dec => {
         if (dec.widget.settings.hideNotes) {
           return;
